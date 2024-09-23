@@ -1,4 +1,4 @@
-/* 
+/*
 Tipos de datos en Javascript
 
 Los tipos de datos se dividen en dos categorías: Primitivos y Complejos
@@ -22,7 +22,13 @@ Los tipos de datos se dividen en dos categorías: Primitivos y Complejos
 
 *Array o Arreglo
   Es un conjunto de datos que los almacena en una lista ordenada de elementos. Los datos dentro de los arreglso se escriben entre corchetes [] y separados por comas ,
-*/
+
+*Object
+  Es un objeto de multiples datos en pares ¨clave¨- "valor". Se escriben entre llaves {} y separadas por comas , 
+
+*Funtions o funciones 
+  Es un tipo de dato que puede ser "invocado". Se declaran con la palabra reservada "funtion" y el codigo que ejecutan entre llave {"codigo"}
+ */
 
 /* Números */
 let miNumero = 6;
@@ -63,3 +69,34 @@ let otroArray = ["Puchunguito","56","true"];
 console.log(misFrutasFavoritas[0]);
 console.log(misNumerosSuerte[1]);
 console.log(otroArray[2]);
+
+/* Objeto */
+
+let persona = {
+  //clave : valor, 
+  nombre : "Alejandra",
+  edad : 20,
+  colorCabello : "castaño",
+  colorOjos : "cafes",
+  altura : 1.77,
+  peso : undefined,
+  vivo : true,
+  novio : true,
+}
+
+console.log(persona);
+// Accedemos al valor de una clave dentro dw un objeto
+// Con la notación de punto .
+console.log(persona.nombre);
+console.log(persona.altura);
+console.log(persona.novio);
+
+/* Function */
+
+let mensajito = function () {
+  // Pasamos el codigo qie ejecuta la función
+  console.log("Este mensaje es lanzado por una función");
+}
+
+//invocamos la función 
+mensajito ();
