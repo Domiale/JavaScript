@@ -82,3 +82,86 @@ console.log(frutasFavoritas);
 frutasFavoritas.push("maracuya");
 
 console.log(frutasFavoritas);
+
+/* 
+pop() - Eliminamos el ultimo elemento del array y lo devuelve
+
+nombre.Pop()
+*/
+
+
+
+/* 
+unshift() - Agrega un elemento al inicio del array.
+
+nombreArray.unshift(dato)
+*/
+
+console.log(frutasFavoritas);
+frutasFavoritas.unshift("mandarina");
+console.log(frutasFavoritas);
+
+/* 
+shift() - Elimina el primer elemento del array y lo devuelve.
+
+nombreArray.shift()
+*/
+
+console.log(numerosLoteria);
+let quitarPrimero = numerosLoteria.shift();
+console.log(numerosLoteria);
+console.log(quitarPrimero);
+
+/* 
+indexOf() - Encuentran el índice de un elemento en el array.
+
+nombreArray.indexOf(dato);
+*/
+
+let indice = frutasFavoritas.indexOf("papaya");
+console.log(indice);
+
+/* 
+splice()- Eliminar o agregar elementos al array desde una posición especifica.
+
+Eliminar
+
+nombreArray.splice(indiceInicio, indiceFinal);
+
+Agregar 
+
+nombreArray.splice(indiceInicio, pasos, valor1, valor2);
+*/
+
+console.log(frutasFavoritas);
+frutasFavoritas.splice(1, 3);
+console.log(frutasFavoritas);
+
+frutasFavoritas.splice(1, 0, "fresa", "banana", "naranja", "aguacate" );
+
+
+/* 
+slice() - crear una copia de una porción del array. No modifica el original, se crea un nuevo array.
+
+nombreArray.slice(indiceInicio, indiceFinal);
+*/
+
+let frutasCopia = frutasFavoritas.slice(3,6);
+
+console.log(frutasCopia);
+
+/* 
+sort() - Ordena los elementos de un Array de mayor a menor
+
+nombreArray.sort() - De primera no pasamos datos entre parentesis.
+
+
+*/
+
+console.log(frutasFavoritas);
+frutasFavoritas.sort();
+console.log(frutasFavoritas);
+
+console.log(numerosLoteria);
+numerosLoteria.sort();
+console.log(numerosLoteria);
