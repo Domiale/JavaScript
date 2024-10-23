@@ -28,5 +28,4 @@ condicion ? expresionSiVerdadera : expresionSiFalsa
 let edad = 19;
 
 let resultado = edad >= 18 ? "Eres mayor de edad" : "Eres un bebé";
-
 console.log(resultado)
